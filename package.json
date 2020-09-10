@@ -1,0 +1,18 @@
+{
+  "name": "lru-web-cache",
+  "version": "0.1.0",
+  "description": "Cache Web API wrapped in an LRU cache manager.",
+  "main": "cache.js",
+  "author": "Aaron Haley <15240680+aar0ndev@users.noreply.github.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@types/jest": "^26.0.13",
+    "jest": "^26.4.2",
+    "standard": "^14.3.4"
+  },
+  "scripts": {
+    "test": "jest",
+    "lint": "standard --fix"
+  }
+}
