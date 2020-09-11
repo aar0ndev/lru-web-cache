@@ -7,12 +7,34 @@
   "license": "MIT",
   "private": false,
   "devDependencies": {
+    "@babel/core": "7",
+    "@babel/plugin-transform-modules-commonjs": "^7.10.4",
+    "@babel/preset-env": "^7.11.5",
     "@types/jest": "^26.0.13",
+    "babel-jest": "^26.3.0",
     "jest": "^26.4.2",
     "standard": "^14.3.4"
   },
   "scripts": {
     "test": "jest",
     "lint": "standard --fix"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules",
+      "/cypress"
+    ]
+  },
+  "dependencies": {
+    "core-js": "^3.6.5"
+  },
+  "babel": {
+    "env": {
+      "test": {
+        "plugins": [
+          "@babel/plugin-transform-modules-commonjs"
+        ]
+      }
+    }
   }
 }
